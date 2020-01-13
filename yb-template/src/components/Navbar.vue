@@ -29,6 +29,7 @@ export default {
     display: flex;
     background: #000;
     color: #fff;
+    z-index: 2;
     img {
         width: 20%
     }

@@ -20,8 +20,6 @@
 <style scoped lang="scss">
 footer {
   width: 100%;
-  position: fixed;
-  bottom: 0;
   background: rgb(243, 240, 243);
   display: flex;
   h4 {

@@ -3,7 +3,7 @@ import Router from 'vue-router'
  
 //组件模块
 // import Main from './components/content/main'
-import Navbar from '@/components/Navbar'
+// import Navbar from '@/components/Navbar'
 Vue.use(Router)
  
 export default new Router({
