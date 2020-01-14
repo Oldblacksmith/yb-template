@@ -2,10 +2,8 @@
   <footer>
     <div class="left">
       <div>
-        <h4>北京总部:</h4>
-        <span>地址：北京市海淀区中关村创业大街6号楼</span>
-        <h4>上海研发中心</h4>
-        <span>地址：上海市张江高科技园区盛夏路666号E栋5层</span>
+        <h4>运营中心</h4>
+        <span>地址：上海市杨浦区国宾路36号五角场万达广场B座2006</span>
       </div>
     </div>
     <div class="right">

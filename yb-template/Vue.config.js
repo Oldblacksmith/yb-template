@@ -1,5 +1,5 @@
 module.exports = {
-    baseUrl:"./",
+    // baseUrl:"./",
     outputDir:"dist",
     assetsDir:"assets",
     indexPath:"index.html",
@@ -16,6 +16,6 @@ module.exports = {
         proxy:'http://192.168.255.201:8082'
     },
     configureWebpack: config => {
-    config.entry.app = './src/main1.js'
+    config.entry.app = './src/main.js'
     }
     }
