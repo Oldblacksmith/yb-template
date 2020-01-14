@@ -1,8 +1,8 @@
 <template>
   <div class="swiper_container">
-    <van-swipe :autoplay="4000" :duration="50" :show-indicators="false">
+    <van-swipe :autoplay="4000" :duration="0" :show-indicators="false">
       <van-swipe-item v-for="(image, index) in SwiperImg" :key="index">
-        <img :src="image" />
+        <img :src="image.src" />
       </van-swipe-item>
     </van-swipe>
     <div class="content">
@@ -53,11 +53,10 @@ export default {
   data() {
     return {
       SwiperImg: [
-        "https://m.360buyimg.com/mobilecms/s750x366_jfs/t1/39343/4/1551/48272/5cbd71f4E329401dc/579b33f530a1402d.jpg!cr_1125x549_0_72!q70.jpg.dpg",
-        "https://m.360buyimg.com/mobilecms/s750x366_jfs/t1/34869/14/3703/113972/5cb953c1E4294d8ea/b73c538710f5c462.jpg!cr_1125x549_0_72!q70.jpg.dpg",
-        "https://m.360buyimg.com/mobilecms/s750x366_jfs/t1/39343/4/1551/48272/5cbd71f4E329401dc/579b33f530a1402d.jpg!cr_1125x549_0_72!q70.jpg.dpg",
-        "https://m.360buyimg.com/mobilecms/s750x366_jfs/t1/34729/14/3948/120618/5cbeee07Efbe17ec5/d57ddd4fbbbc09e0.jpg!cr_1125x549_0_72!q70.jpg.dpg",
-        "https://m.360buyimg.com/mobilecms/s750x366_jfs/t1/34423/17/5378/97852/5cbecd7bE73730c2f/76e5359d8fb3a1e1.jpg!cr_1125x549_0_72!q70.jpg.dpg"
+        {src: require('@/assets/yb.jpg')},
+        {src: require('@/assets/yb.jpg')},
+        {src: require('@/assets/yb.jpg')},
+        {src: require('@/assets/yb.jpg')},
       ],
       list: [
         {
@@ -164,6 +163,7 @@ export default {
     height: 100%;
     img {
       width: 100%;
+      height: 100%;
     }
   }
 }
