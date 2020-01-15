@@ -7,10 +7,16 @@
       </div>
     </div>
     <div class="right">
-      <div>
-        <img src="@/assets/xiaocx_01.png" alt />
-        <img src="@/assets/xiaocx_02.png" alt />
-        <img src="@/assets/ewm_01.png" alt />
+      <div class="right-item">
+        <div class="item">
+          <img src="@/assets/xiaocx_01.png" alt />
+        </div>
+        <div class="item">
+          <img src="@/assets/xiaocx_02.png" alt />
+        </div>
+        <div class="item">
+          <img src="@/assets/ewm_01.png" alt />
+        </div>
       </div>
     </div>
   </footer>
@@ -20,25 +26,29 @@ footer {
   width: 100%;
   background: rgb(243, 240, 243);
   display: flex;
+  font-size: .5rem;
   h4 {
-      margin-bottom: 0;
+    margin-bottom: 0;
   }
   .left {
     width: 50%;
     div {
-        display: flex;
-        flex-direction: column;
+      display: flex;
+      flex-direction: column;
     }
   }
   .right {
     width: 50%;
     display: flex;
     align-items: center;
-    div {
+    .right-item {
       display: flex;
       justify-content: space-around;
-      img {
+      .item {
         width: 30%;
+        img {
+          width: 100%;
+        }
       }
     }
   }

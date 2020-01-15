@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <div class="navbar">
+      <div class="img">
         <img src="@/assets/yb_logo.png" alt="">
+      </div>
         <div class="title">
             <span @click="change('index')">首页</span>
             <span @click="change('product')">产品</span>
@@ -57,18 +59,26 @@ body {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   .navbar {
     width: 100%;
-    height: 2.5rem;
+    height: 3.75rem;
     position: fixed;
     top: 0;
     display: flex;
     background: #000;
     color: #fff;
     z-index: 2;
-    img {
-        width: 28%
+    .img {
+      width: 50%;
+      // padding: .4rem 0;
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+      img {
+        width: 100%;
+    }
     }
     .title {
-        width: 72%;
+        width: 100%;
+        height: 100%;
         display: flex;
         justify-content: space-around;
         align-items: center;

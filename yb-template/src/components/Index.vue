@@ -10,19 +10,25 @@
       <div class="content_main">
         <h3 class="title">解决方案</h3>
         <div class="main_item" v-for="(item,i) in list" :key="i">
-          <img :src="item.src" alt />
+          <div class="img">
+            <img :src="item.src" alt />
+          </div>
           <div class="main_msg">
             <h4>{{item.title}}</h4>
             <p>{{item.msg}}</p>
           </div>
         </div>
       </div>
-    <p class="center">运用自身核心优势，精准采集，数据分析，数据运用精准投放；提高 推广效率，降低推广获客成本。</p>
+      <p class="center">运用自身核心优势，精准采集，数据分析，数据运用精准投放；提高 推广效率，降低推广获客成本。</p>
       <div class="imgbox">
         <div class="img">
-          <img v-for="(item,i) in imglist" :key="i" :src="item" />
+          <div class="img-item" v-for="(item,i) in imglist" :key="i">
+            <img :src="item" />
+          </div>
         </div>
+        <div class="linebox">
         <img src="@/assets/line.jpg" alt />
+        </div>
         <p>
           <span>自有数据</span>
           <span>大数据分析</span>
@@ -34,7 +40,9 @@
       <h3 style="text-align: center">服务涵盖行业</h3>
       <div class="imgbox">
         <div class="img">
-          <img v-for="(item,i) in imglist2" :key="i" :src="item" />
+          <div class="img-item"  v-for="(item,i) in imglist2" :key="i">
+            <img :src="item" />
+          </div>
         </div>
         <p>
           <span>线下实体</span>
@@ -53,10 +61,10 @@ export default {
   data() {
     return {
       SwiperImg: [
-        {src: require('@/assets/yb.jpg')},
-        {src: require('@/assets/yb.jpg')},
-        {src: require('@/assets/yb.jpg')},
-        {src: require('@/assets/yb.jpg')},
+        { src: require("@/assets/yb.jpg") },
+        { src: require("@/assets/yb.jpg") },
+        { src: require("@/assets/yb.jpg") },
+        { src: require("@/assets/yb.jpg") }
       ],
       list: [
         {
@@ -83,15 +91,15 @@ export default {
         src2: require("@/assets/img_2.jpg"),
         src3: require("@/assets/img_3.jpg"),
         src4: require("@/assets/img_4.jpg"),
-        src5: require("@/assets/img_5.png"),
+        src5: require("@/assets/img_5.png")
       },
       imglist2: {
         src1: require("@/assets/img_icon1.jpg"),
         src2: require("@/assets/img_icon2.jpg"),
         src3: require("@/assets/img_icon3.jpg"),
         src4: require("@/assets/img_icon4.jpg"),
-        src5: require("@/assets/img_icon5.png"),
-      },
+        src5: require("@/assets/img_icon5.png")
+      }
     };
   },
   components: {},
@@ -101,7 +109,7 @@ export default {
 <style lang="scss" scoped>
 .swiper_container {
   width: 100%;
-  font-size: .5rem;
+  font-size: 0.5rem;
   .van-swipe {
     height: 12rem;
   }
@@ -115,10 +123,14 @@ export default {
     .main_item {
       display: flex;
       margin-bottom: 1rem;
-      img {
+      .img {
         width: 30%;
         margin-right: 1rem;
+        img {
+          width: 100%;
+        }
       }
+
       .main_msg {
         width: 100%;
         h4 {
@@ -129,14 +141,17 @@ export default {
     .imgbox {
       width: 100%;
       padding: 0 1rem;
-      font-size: .5rem;
+      font-size: 0.5rem;
       box-sizing: border-box;
       .img {
         width: 100%;
         display: flex;
         justify-content: space-around;
-        img {
+        .img-item {
           width: 10%;
+          img {
+            width: 100%;
+          }
         }
       }
       img {
@@ -147,6 +162,12 @@ export default {
         span {
           width: 20%;
           text-align: center;
+        }
+      }
+      .linebox {
+        width: 100%;
+        img {
+          width: 100%;
         }
       }
     }
