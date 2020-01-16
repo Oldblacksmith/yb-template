@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <img src="@/assets/banner.jpg" alt />
+    <img src="@/assets/banner.png" alt />
     <div class="title">
       <h3>招募地区覆盖全国</h3>
       <p>广阔天地大有可为,时不我待只争朝夕</p>
@@ -12,7 +12,7 @@
       </div>
       <div class="content_item">
         <h4>系能力提供</h4>
-        <p>人脸识别插件式解决方案+ 客户画像大数据</p>
+        <p>大数据插件式解决方案+ 客户画像大数据</p>
       </div>
       <div class="content_item">
         <h4>地区合作伙伴</h4>
@@ -20,10 +20,12 @@
       </div>
       <div class="content_item">
         <h4>合作邮箱</h4>
-        <p>marketing@digitalboom.com.cn</p>
+        <p>ybdata@aliyun.com</p>
       </div>
     </div>
-    <img src="@/assets/banner2.jpg">
+    <div class="content_img">
+    <img src="@/assets/yb_logo1.png">
+    </div>
   </div>
 </template>
 <script>
@@ -34,7 +36,6 @@ export default {
 <style lang="scss" scoped>
     .container {
         width: 100%;
-        font-size: .5rem;
         img {
             width: 100%;
         }
@@ -49,6 +50,13 @@ export default {
             .content_item {
                 margin: 2rem 0;
             }
+        }
+        .content_img {
+          width: 100%;
+          img {
+            width: 100%;
+            display: block;
+          }
         }
     }
 </style>

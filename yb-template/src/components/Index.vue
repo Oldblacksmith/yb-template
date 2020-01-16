@@ -38,7 +38,7 @@
         </p>
       </div>
       <h3 style="text-align: center">服务涵盖行业</h3>
-      <div class="imgbox">
+      <div class="imgbox imgbox1">
         <div class="img">
           <div class="img-item"  v-for="(item,i) in imglist2" :key="i">
             <img :src="item" />
@@ -61,10 +61,10 @@ export default {
   data() {
     return {
       SwiperImg: [
-        { src: require("@/assets/yb.jpg") },
-        { src: require("@/assets/yb.jpg") },
-        { src: require("@/assets/yb.jpg") },
-        { src: require("@/assets/yb.jpg") }
+        { src: require("@/assets/yb.png") },
+        { src: require("@/assets/yb.png") },
+        { src: require("@/assets/yb.png") },
+        { src: require("@/assets/yb.png") }
       ],
       list: [
         {
@@ -77,13 +77,13 @@ export default {
           src: require("@/assets/image_02.jpg"),
           title: "智慧物业",
           msg:
-            "基于AI人脸识别技术及全新的saas会员管理系统，并依托于云端构建的数据库体系，为传统零售"
+            "依托于百度AI人脸识别、动作识别、智能视频分析等技术将多元化的信息服务与管理、安防与物业、管理家庭智能化通过系统集成，从而实现快捷高效的增值服务与管理，打造高品质智能化项目"
         },
         {
           src: require("@/assets/image_03.jpg"),
           title: "智慧安全",
           msg:
-            "基于AI人脸识别技术及全新的saas会员管理系统，并依托于云端构建的数据库体系，为传统零售"
+            "依托于百度AI人脸识别、智能视频分析技术，通过对人脸动态识别、活体检测、客流统计、卡证识别等结合应用景，实现以人脸为核心的“海陆空”立体防控，通过视频大数据分析做到真正场景化的：打、防、管、控，为政府打击犯罪、维稳等业务提供管控平台解决方案"
         }
       ],
       imglist: {
@@ -109,7 +109,6 @@ export default {
 <style lang="scss" scoped>
 .swiper_container {
   width: 100%;
-  font-size: 0.5rem;
   .van-swipe {
     height: 12rem;
   }
@@ -117,12 +116,18 @@ export default {
     width: 100%;
     display: flex;
     flex-direction: column;
+    >p {
+      padding: 0 .5rem;
+    }
     .title {
       text-align: center;
     }
     .main_item {
+      width: 100%;
+      height: 3.75rem;
       display: flex;
       margin-bottom: 1rem;
+      overflow: hidden;
       .img {
         width: 30%;
         margin-right: 1rem;
@@ -135,13 +140,19 @@ export default {
         width: 100%;
         h4 {
           margin-top: 0;
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+        p {
+          font-size: .5rem;
+          margin-top: 0;
         }
       }
     }
     .imgbox {
       width: 100%;
       padding: 0 1rem;
-      font-size: 0.5rem;
+      font-size: 0.7rem;
       box-sizing: border-box;
       .img {
         width: 100%;
@@ -149,6 +160,8 @@ export default {
         justify-content: space-around;
         .img-item {
           width: 10%;
+          display: flex;
+          align-items: center;
           img {
             width: 100%;
           }
@@ -170,6 +183,10 @@ export default {
           width: 100%;
         }
       }
+    }
+    .imgbox1 {
+      background: #fafaf9;
+      padding-top: 1rem;
     }
     .center {
       text-align: center;

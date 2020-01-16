@@ -52,16 +52,17 @@ export default {
 body {
   margin: 0;
   padding: 0;
-  padding-top: 2.5rem;
+  // padding-top: 3.75rem;
   color: rgb(138, 137, 137);
+  font-size: .8rem;
 }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   .navbar {
     width: 100%;
     height: 3.75rem;
-    position: fixed;
-    top: 0;
+    // position: fixed;
+    // top: 0;
     display: flex;
     background: #000;
     color: #fff;
