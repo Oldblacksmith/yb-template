@@ -9,28 +9,27 @@
     <div class="foot">
       <div class="icon">
         <div class="iconbox">
-          <img src="@/assets/icon_01.jpg" alt />
+          <img src="@/assets/icon_01.png" alt />
         </div>
         <div class="iconbox">
-          <img src="@/assets/icon_02.jpg" alt />
+          <img src="@/assets/icon_02.png" alt />
         </div>
         <div class="iconbox">
-          <img src="@/assets/icon_03.jpg" alt />
+          <img src="@/assets/icon_03.png" alt />
         </div>
       </div>
       <div class="text">
         <div>
-          <h4>餐饮</h4>
-          <span>会员到店前置发现</span>
-          <span>因为感知，所以温度</span>
+          <h4>今日头条</h4>
+          <span>国内领先自媒体</span>
         </div>
         <div>
-          <h4>商超便利</h4>
-          <span>精准描绘到店客户画像</span>
+          <h4>抖音</h4>
+          <span>好玩有趣小视频</span>
         </div>
         <div>
-          <h4>鞋服连锁</h4>
-          <span>大数据资产是未来第一生产力</span>
+          <h4>火山视频</h4>
+          <span>拥有大量有料视频</span>
         </div>
       </div>
     </div>

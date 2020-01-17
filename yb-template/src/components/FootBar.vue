@@ -13,7 +13,7 @@
       <div class="right-item">
      
         <div class="item">
-          <img src="@/assets/ewm_01.png" alt />
+          <img src="@/assets/ewm_01.jpg" alt />
         </div>
       </div>
     </div>

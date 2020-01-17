@@ -7,7 +7,7 @@
         <div class="title">
             <span @click="change('index')">首页</span>
             <span @click="change('product')">产品</span>
-            <span @click="change('partiner')">合作招募</span>
+            <span @click="change('partiner')">合作</span>
             <span @click="change('aboutus')">关于我们</span>
         </div>
     </div>
@@ -64,8 +64,8 @@ body {
     // position: fixed;
     // top: 0;
     display: flex;
-    background: #000;
-    color: #fff;
+    background: #fff;
+    color: #000;
     z-index: 2;
     .img {
       width: 50%;

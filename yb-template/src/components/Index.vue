@@ -8,7 +8,7 @@
     <div class="content">
       <p>秉承开放创新的原则，回归中国实体产业，目前已初步形成高端实业、供应链、大数据服务及开发运营等板块；脚踏实地把口号式呐喊落到实处，助力中国实体产业发展；把实体产业转型升级成符合当代发展所需的配套设施设备。</p>
       <div class="content_main">
-        <h3 class="title">解决方案</h3>
+        <h3 class="title">服务产品</h3>
         <div class="main_item" v-for="(item,i) in list" :key="i">
           <div class="img">
             <img :src="item.src" alt />
@@ -34,7 +34,7 @@
           <span>大数据分析</span>
           <span>精准人群</span>
           <span>数据包投资</span>
-          <span>降低投放成本</span>
+          <span>降低成本</span>
         </p>
       </div>
       <h3 style="text-align: center">服务涵盖行业</h3>
@@ -68,22 +68,22 @@ export default {
       ],
       list: [
         {
-          src: require("@/assets/image_01.jpg"),
-          title: "智慧商铺",
+          src: require("@/assets/image_01.png"),
+          title: "行业精准数据包",
           msg:
-            "基于AI人脸识别技术及全新的saas会员管理系统，并依托于云端构建的数据库体系，为传统零售"
+            "依托先进的服务管理软件，实现精准的用户定位，为企业搭建一个全方位的精准营销平台。"
         },
         {
-          src: require("@/assets/image_02.jpg"),
-          title: "智慧物业",
+          src: require("@/assets/image_02.png"),
+          title: "推广渠道",
           msg:
-            "依托于百度AI人脸识别、动作识别、智能视频分析等技术将多元化的信息服务与管理、安防与物业、管理家庭智能化通过系统集成，从而实现快捷高效的增值服务与管理，打造高品质智能化项目"
+            "平台拥有头条,抖音,火山等行业领先的流量平台,还包括汇聚行业优质流量的优量广告"
         },
         {
-          src: require("@/assets/image_03.jpg"),
-          title: "智慧安全",
+          src: require("@/assets/image_03.png"),
+          title: "流量变现",
           msg:
-            "依托于百度AI人脸识别、智能视频分析技术，通过对人脸动态识别、活体检测、客流统计、卡证识别等结合应用景，实现以人脸为核心的“海陆空”立体防控，通过视频大数据分析做到真正场景化的：打、防、管、控，为政府打击犯罪、维稳等业务提供管控平台解决方案"
+            "开创互动广告全新形式，日均曝光50亿+，覆盖12亿+在线移动APP用户兼顾媒体收益，实现媒体主、广告主、用户多方共赢"
         }
       ],
       imglist: {
